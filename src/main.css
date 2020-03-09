@@ -1,0 +1,78 @@
+html, body {
+    background-color: #222831;
+}
+
+/*
+.container {
+    border: 3px solid black;
+}
+
+.row {
+    border: 3px solid rebeccapurple;
+}
+*/
+
+#centroDaPagina {
+    /*background: #222 url('https://unsplash.it/1920/1080/?random') center center no-repeat;*/
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* only used for background overlay not needed for centering */
+form:before, #result:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #fd7014;
+}
+
+form {
+    color: #eeeeee;
+}
+
+strong, .toast-body {
+    color: rebeccapurple;
+}
+
+#result {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.logo {
+    position:absolute;
+}
+
+@media (max-width: 1033px) {
+    .logo {
+        display: none;
+    }
+}
